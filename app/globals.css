@@ -1,42 +1,150 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body,
+html {
+  height: 100%;
+  background-color: rgb(0, 31, 57);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h1 {
+  font-family: serif;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+p {
+  position: absolute;
+  color: #ffffff;
+  font-size: 2rem;
+  left: 3%;
+  bottom: 3%;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.center {
+  position: relative;
+  height: 100%;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+.center h1 {
+  position: absolute;
+  bottom: 47%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
   margin: 0;
+  font-size: 6.7rem;
+  transition: 0.6s;
 }
 
-a {
-  color: inherit;
+.center h1:hover {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 6.7rem;
+  text-shadow: 0 0 9rem #ffffff;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: rgba(1, 55, 100, 0.54);
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+}
+
+nav a {
+  color: white;
   text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  display: block;
+  text-align: center;
+  transition: 0.6s;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+nav a:hover {
+  background-color: black;
+  text-decoration: none;
+  padding: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+nav li {
+  float: left;
+}
+
+.container {
+  background-color: #ffffffa6;
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  overflow-wrap: break-word;
+  margin-bottom: 2rem;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.left {
+  float: left;
+  padding-right: 1rem;
+}
+
+.right {
+  float: right;
+  padding-left: 1rem;
+}
+
+.images {
+  display: flex;
+}
+
+.a {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.retourner {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+}
+
+.retourner button {
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgba(1, 55, 100, 0.54);
+  color: white;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.retourner button:hover {
+  padding: 1.5rem;
+  font-size: 2.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgba(1, 55, 100, 0.54);
+  color: white;
+  border-radius: 2rem;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem;
+}
+
+.border {
+  border: 0.3rem solid rgba(0, 0, 0, 0.407);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
 }
