@@ -7,11 +7,6 @@ import colombe from "/public/colombe.jpg";
 import Link from "next/link";
 
 const SavoirPlus = () => {
-  const d = new Date();
-  const month = d.toLocaleString("fr-FR", { month: "long" });
-  const day = d.getDate();
-  const year = d.getFullYear();
-
   return (
     <div className="container">
       <h1>Le résumé de l&apos;histoire</h1>
