@@ -56,19 +56,10 @@ const SavoirPlus = () => {
       <br />
       <div className="border">
         <h2 className="a">
-          Si le déluge a commencé aujourd&apos;hui, le {day} {month} {year}, le
+          Si le déluge a commencé aujourd&apos;hui, le 7 novembre 2024, le
           déluge se terminera le
         </h2>
-        <h1>
-          {new Date(d.getTime() + 40 * 24 * 60 * 60 * 1000).toLocaleString(
-            "fr-FR",
-            {
-              day: "numeric",
-              month: "long",
-              year: "numeric",
-            }
-          )}
-        </h1>
+        <h1>17 décembre 2024</h1>
       </div>
       <br />
       <div className="images">
